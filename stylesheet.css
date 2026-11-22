@@ -64,6 +64,10 @@ header {
   gap: 20px;
 }
 
+ul {
+  list-style-type: "\2766 ";
+  text-align: left;
+}
 
 .hdr-L {
   position: absolute;
@@ -75,4 +79,18 @@ header {
   position: absolute;
   right: 0;
   top: auto;
+}
+
+.Top-Sect {
+  background-color: #deeafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bottom-Sect {
+  background-color: #deeafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
