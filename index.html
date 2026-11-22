@@ -25,33 +25,30 @@
         <h1>Rori's New Site</h1>
         <p>Welcome to my new website!</p>
       </div>
-      <div class="hdr-R">
-        <button>
-          <a href="index.html">Home</a>
-        </button>
-        <button>
-          <a href="directory.html">Directory</a>
-        </button>
-      </div>
+      <nav class="hdr-R Directory-Nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="directory.html">Directory</a>
+      </nav>
     </header>
-      </br>
-    <main>
-      <div class="Top-Sect">
-        <h2>Welcome to the new website.</h2>
-        <p><em>Things you can do here~</em></p>
-        <ul>
-          <li>Check out the shop.</li>
-          <li>Look at my photos.</li>
-          <li>Look at my art.</li>
-          <li>Read my writing.</li>
-          <li>Read my thoughts on life anything in between.</li>
-        </ul>
-      </div>
-      <div class="Bottom-Sect">
+    <main class="Home-Main">
+      <section class="Home-Section Home-Welcome">
+        <div class="Home-Intro">
+          <h2>Welcome to the new website.</h2>
+          <p><em>Things you can do here~</em></p>
+        </div>
+        <nav class="Home-Page-Links" aria-label="Explore the site">
+          <ul>
+            <li><a href="shop.html">Check out the shop</a></li>
+            <li><a href="photos.html">Look at my photos</a></li>
+            <li><a href="art.html">Look at my art</a></li>
+            <li><a href="writing.html">Read my writing</a></li>
+            <li><a href="thoughts.html">Read my thoughts on life and everything in between</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="Home-Section Home-Thanks">
         <h3>Thanks for visiting!</h3>
-      </div>
+      </section>
     </main>
   </body>
-    <!--- SCRIPTS --->
-  <script src="currency-script.js"></script>
 </html>

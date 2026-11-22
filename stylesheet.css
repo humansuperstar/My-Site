@@ -81,16 +81,134 @@ ul {
   top: auto;
 }
 
-.Top-Sect {
-  background-color: #deeafc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Directory-Main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
 }
 
-.Bottom-Sect {
+.Directory-Section,
+.Home-Section {
   background-color: #deeafc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 2px solid #62a0ea;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.Home-Main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.Home-Welcome {
+  padding: 32px 24px;
+}
+
+.Home-Intro h2 {
+  margin-top: 0;
+}
+
+.Directory-Nav a {
+  display: inline-block;
+  margin: 8px 4px;
+  padding: 15px 24px;
+  border: 2px solid #62a0ea;
+  border-radius: 100px;
+  background-color: #deeafc;
+  font-size: 20px;
+}
+
+.Directory-Nav a[aria-current="page"] {
+  background-color: #c5dcf8;
+}
+
+.Directory-Intro h2,
+.Directory-Outro h2 {
+  margin-top: 0;
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+}
+
+.Directory-Links ul,
+.Home-Page-Links ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Directory-Links a,
+.Home-Page-Links a {
+  display: block;
+  padding: 12px 16px;
+  border: 2px solid #62a0ea;
+  border-radius: 100px;
+  background-color: #ffffff;
+  font-family: "Gaegu", sans-serif;
+  font-size: 20px;
+}
+
+.Directory-Links a:hover,
+.Directory-Links a:focus-visible,
+.Home-Page-Links a:hover,
+.Home-Page-Links a:focus-visible {
+  background-color: #f5f8ff;
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.Directory-Links a[aria-current="page"],
+.Home-Page-Links a[aria-current="page"] {
+  background-color: #c5dcf8;
+}
+
+.Home-Thanks h3 {
+  margin: 0;
+}
+
+.Directory-Outro p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .Directory-Main {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  .Directory-Section,
+  .Home-Section {
+    padding: 20px 16px;
+  }
+
+  .Home-Main {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .hdr-L,
+  .hdr-R {
+    position: static;
+  }
+
+  .hdr-L img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Directory-Nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
